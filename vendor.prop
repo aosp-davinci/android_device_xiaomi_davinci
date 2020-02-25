@@ -135,6 +135,9 @@ ro.nfc.port=I2C
 # PASR
 vendor.power.pasr.enabled=true
 
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
 # Perfetto
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
