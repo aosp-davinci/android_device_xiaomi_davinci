@@ -8,4 +8,13 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+   	<name>vendor.nxp.nxpnfc</name>
+        <version>1.0</version>
+	<transport>hwbinder</transport>
+        <interface>
+            <name>INxpNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>
