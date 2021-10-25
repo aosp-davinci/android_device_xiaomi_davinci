@@ -135,6 +135,9 @@ ro.nfc.port=I2C
 # PASR
 vendor.power.pasr.enabled=true
 
+# Perfetto
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
 
