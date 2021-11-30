@@ -27,6 +27,15 @@
 #
 #
 
+service persistentLogging /system/bin/logcat -r 1024 -n 9 -v threadTime -f /cache/logs/log
+    user system
+    group system log
+    disabled
+
+on post-fs
+    mkdir /cache/logs 0775 system log
+    start persistentLogging
+
 on post-fs-data
     mkdir /data/vendor/nfc 0770 nfc nfc
 
