@@ -49,9 +49,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.davinci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.davinci.rc
 
 # NFC
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/nxp/opensource/sn100x
-
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     com.gsma.services.nfc \
