@@ -12,8 +12,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from davinci device
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
-# Inherit some common Arrow stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+# Inherit some common PixelExperience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP := false
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_davinci
@@ -22,15 +28,8 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi K20
 PRODUCT_MANUFACTURER := Xiaomi
 
-DEVICE_MAINTAINER := TH779, kubersharma001
-
 PRODUCT_CHARACTERISTICS := nosdcard
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys"
-
-BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
-
-TARGET_INCLUDE_PIXEL_CHARGER := true
+BUILD_FINGERPRINT := Xiaomi/davinci/davinci:11/RKQ1.200826.002/V12.1.4.0.RFJMIXM:user/release-keys
