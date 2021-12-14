@@ -63,8 +63,6 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
-debug.sf.hw=0
-debug.egl.hw=0
 debug.sf.latch_unsignaled=1
 persist.demo.hdmirotationlock=false
 persist.sys.sf.color_saturation=1.0
@@ -130,17 +128,11 @@ persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
-# NFC
-ro.nfc.port=I2C
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Perfetto
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
-
-# Qualcomm System Daemon
-persist.vendor.qcomsysd.enabled=1
 
 # RCS
 persist.rcs.supported=0
