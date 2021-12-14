@@ -83,9 +83,11 @@ void vendor_load_properties() {
     } else if (region == "CN") {
         set_device_props(
             "Xiaomi", "davinci", "Redmi K20");
+        property_override("ro.boot.product.hardware.sku", "davinci");
     } else {
         set_device_props(
             "Xiaomi", "davinci", "Mi 9T");
+        property_override("ro.boot.product.hardware.sku", "davinci");
     }
     load_dalvik_properties();
     property_override("ro.boot.verifiedbootstate", "green");
