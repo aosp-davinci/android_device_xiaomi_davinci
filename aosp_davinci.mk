@@ -21,6 +21,8 @@ TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP := false
 
+CUSTOM_BUILD_TYPE := STABLE
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_davinci
 PRODUCT_DEVICE := davinci

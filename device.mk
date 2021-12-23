@@ -348,6 +348,12 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# OTA
+ifneq ($(filter STABLE,$(CUSTOM_BUILD_TYPE)),)
+PRODUCT_PACKAGES += \
+    Updater
+endif
+
 # Parts
 PRODUCT_PACKAGES += \
     XiaomiParts
