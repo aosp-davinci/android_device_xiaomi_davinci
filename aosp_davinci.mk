@@ -23,6 +23,8 @@ TARGET_SUPPORTS_QUICK_TAP := false
 
 CUSTOM_BUILD_TYPE := STABLE
 
+TARGET_USES_AOSP_RECOVERY := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_davinci
 PRODUCT_DEVICE := davinci
