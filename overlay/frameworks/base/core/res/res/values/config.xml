@@ -716,4 +716,8 @@
      screen directly in front of the sensor. -->
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">1900px</dimen>
 
+    <!-- Whether to enable shifting of elements in the status bar and the navigation bar.
+         Should be enabled for OLED devices to reduce/prevent burn in on the status bar
+         and on the navigation bar and disabled for all other devices. -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
 </resources>
