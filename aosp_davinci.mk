@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2018-2019,2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -32,8 +32,13 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi K20
 PRODUCT_MANUFACTURER := Xiaomi
 
+PRODUCT_SYSTEM_NAME := davinci
+
 PRODUCT_CHARACTERISTICS := nosdcard
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 BUILD_FINGERPRINT := Xiaomi/davinci/davinci:11/RKQ1.200826.002/V12.5.2.0.RFJCNXM:user/release-keys
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_PRODUCT="davinci"
