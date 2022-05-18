@@ -50,3 +50,8 @@ debug.cpurend.vsync=false
 # Graphics
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
+
+# Video Calling
+persist.vendor.radio.report_codec=1
+persist.vendor.radio.vdp_on_ims_cap=1
+persist.vendor.qti.telephony.vt_cam_interface=2
